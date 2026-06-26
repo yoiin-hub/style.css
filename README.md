@@ -1,9 +1,8 @@
-# style.css
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Inter, Arial, sans-serif;
+    font-family:Inter,Arial,sans-serif;
 }
 
 body{
@@ -28,7 +27,6 @@ nav a{
     color:white;
     text-decoration:none;
     margin:0 15px;
-    transition:.3s;
 }
 
 nav a:hover{
@@ -82,15 +80,47 @@ nav a:hover{
     border-radius:20px;
     padding:30px;
     max-width:420px;
-    box-shadow:0 20px 40px rgba(0,0,0,.3);
+    width:100%;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
 }
 
-.chat-card h3{
-    color:#22C55E;
+.chat-header{
+    display:flex;
+    justify-content:space-between;
     margin-bottom:20px;
+    font-weight:bold;
 }
 
-.chat-card p{
+.status{
+    color:#22C55E;
+    font-size:14px;
+}
+
+.message{
+    padding:14px;
+    border-radius:12px;
     margin-bottom:15px;
-    color:#CBD5E1;
+}
+
+.customer{
+    background:#1E293B;
+}
+
+.flow{
+    background:#16213E;
+}
+
+.product-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0F172A;
+    border:1px solid #334155;
+    padding:14px;
+    border-radius:12px;
+    margin:10px 0;
+}
+
+.product-card:hover{
+    border-color:#22C55E;
 }
